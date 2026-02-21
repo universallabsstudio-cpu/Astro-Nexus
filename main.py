@@ -10,7 +10,7 @@ import pickle
 import os
 
 # --- 1. API SETUP & CONSTANTS ---
-API_KEY = "AIzaSyA4c-et3rzJLdQrHmKeJbRps-ZTeRGTje0" # Tumhari key
+API_KEY =  # Tumhari key
 genai.configure(api_key=API_KEY)
 model = genai.GenerativeModel('models/gemini-3-flash-preview')
 
@@ -252,4 +252,5 @@ if user_input:
                     save_data() 
                     st.rerun()
     else:
+
         st.error("⚠️ Balance low! Sidebar se ek ad dekh kar coins badhayein.")
